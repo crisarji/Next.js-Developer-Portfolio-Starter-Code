@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function Layout({children, className=""}) {
+export default function Layout({ children, className = "" }) {
   return (
-    <div className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}> {children}
-      
+    <div
+      className={`w-full h-full inline-block z-0 bg-light p-32 dark:bg-dark xl:p-24 lg:p-16 md:p-12 sm:p8  ${className}`}
+    >
+      {" "}
+      {children}
     </div>
-  )
+  );
 }
